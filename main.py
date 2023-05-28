@@ -22,15 +22,15 @@ class Record:                   # Відповідає за логіку дод�
         self.phones.append(Phone(phone))
 
     def delete_phone(self, phone):
-        for phone_i in self.phones:
-            if phone_i.value == phone:
-                self.phones.remove(phone_i)
+        for phone_number in self.phones:
+            if phone_number.value == phone:
+                self.phones.remove(phone_number)
                 break
 
     def change_phone(self, phone, new_phone):
-        for phone_i in self.phones:
-            if phone_i.value == phone:
-                phone_i.value = new_phone
+        for phone_number in self.phones:
+            if phone_number.value == phone:
+                phone_number.value = new_phone
                 break
     
     
